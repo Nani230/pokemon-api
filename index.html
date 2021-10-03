@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="toast" id="toast">
+            <p class="message" id="message">Message!!!</p>
+        </div>
+        <div class="body">
+            <section class="container">
+                <div class="add-pokemon">
+                    <h1 class="title">Pokemon</h1>
+
+                    <div class="add-input">
+                        <form id="addfrom">
+                            <div class="inputs">
+                                <input
+                                    id="name"
+                                    type="text"
+                                    placeholder="Name"
+                                />
+                                <input
+                                    id="type"
+                                    type="text"
+                                    placeholder="Type"
+                                />
+                                <input id="Hp" type="number" placeholder="Hp" />
+                                <input
+                                    id="Attack"
+                                    type="number"
+                                    placeholder="Attack"
+                                />
+                                <input
+                                    id="Defense"
+                                    type="number"
+                                    placeholder="Defense"
+                                />
+                                <input
+                                    id="Speed"
+                                    type="number"
+                                    placeholder="Speed"
+                                />
+                                <button
+                                    class="btn"
+                                    type="button"
+                                    onclick="addpokemon()"
+                                >
+                                    Creat
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="add-pokemon-1">
+                    <h1 class="title">Pokemons</h1>
+                    <div id="update-pokemon" class="update-pokemon"></div>
+                </div>
+            </section>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    font-family: "Segoe UI";
+    height: auto;
+}
+.add-pokemon {
+    padding: 50px 0px;
+}
+.add-input {
+    padding-top: 30px;
+}
+.inputs > input {
+    height: 40px;
+    width: 15%;
+    border-radius: 10px;
+    text-indent: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    transition: 0.4s;
+}
+.update-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: #242b2e;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.title {
+    font-weight: normal;
+    font-size: 35px;
+}
+.pokemon {
+    width: 30%;
+    height: 120px;
+    box-shadow: 0 0 10px lightgray;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.pokemon:hover > .more {
+    margin-top: 120px;
+}
+.overlay {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+}
+.more {
+    width: 100%;
+    height: 120px;
+    background-color: #353535;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    position: absolute;
+    transition: 0.4s;
+}
+.more-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.more-details > p {
+    padding: 10px 0px;
+}
+.overlay-details {
+    display: flex;
+    justify-content: space-between;
+}
+.toast {
+    width: 10%;
+    padding: 15px 10px;
+    background-color: gray;
+    position: fixed;
+    left: 89%;
+    top: 80vh;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.message {
+    padding: 0 10px;
+    font-family: "Segoe UI";
+    color: white;
+}
